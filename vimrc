@@ -1,5 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
+set bg=dark
 
 
 " Init Vundle
@@ -138,7 +139,7 @@ set modeline
 set t_Co=256
 
 syntax enable
-" let g:solarized_termcolors=256
+ let g:solarized_termcolors=256
 colorscheme solarized
 
 filetype plugin on
