@@ -138,9 +138,9 @@ set modeline
 " Set colors
 set t_Co=256
 
-syntax enable
- let g:solarized_termcolors=256
-colorscheme solarized
+"syntax enable
+" let g:solarized_termcolors=256
+"colorscheme solarized
 
 filetype plugin on
 filetype indent on
