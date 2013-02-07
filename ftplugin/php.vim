@@ -1,6 +1,6 @@
 setlocal keywordprg=pman
 
-let g:syntastic_phpcs_conf=" --standard=PSR2 "
+let g:syntastic_phpcs_conf=" --standard=PSR1 "
 
 let g:php_source_prefixes = ['src/main/php/', 'src/main/', 'src/', 'lib/']
 
