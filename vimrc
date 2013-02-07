@@ -229,7 +229,11 @@ map <F5> :setlocal spell! spelllang=en_us<cr>
 " Map <F6> to turn spelling (de) on (VIM 7.0+)
 map <F6> :setlocal spell! spelllang=de<cr>
 
+" Configure powerline
+let g:Powerline_symbols = 'fancy'
 python from powerline.bindings.vim import source_plugin; source_plugin()
+let g:Powerline_symbols = 'fancy'
+
 
 " Configure Ultisnips
 let g:UltiSnipsExpandTrigger = "<Tab>"
