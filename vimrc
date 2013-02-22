@@ -25,7 +25,7 @@ Bundle 'Lokaltog/powerline'
 " Syntaxt checks
 Bundle 'scrooloose/syntastic'
 " Abbreviate and convenient substitute
-Bundle 'tpope/vim-abolish'
+"Bundle 'tpope/vim-abolish'
 " Solarized color scheme
 Bundle "altercation/vim-colors-solarized"
 " :Rename command and more shell commands
@@ -234,7 +234,7 @@ let g:Powerline_symbols = 'fancy'
 
 
 " Configure Ultisnips
-let g:UltiSnipsExpandTrigger = "<Tab>"
+"let g:UltiSnipsExpandTrigger = "<Tab>"
 let g:UltiSnipsListSnippets = "<M-Tab>"
 " Set a custom snippets directory
 let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
@@ -250,4 +250,4 @@ let g:EasyMotion_leader_key = '<Leader>'
 " Completion options
 set completeopt=menu,preview
 " Default completion is "normal" (what my old PHP FT plugin did)
-let g:SuperTabDefaultCompletionType = "<c-p>"
+"let g:SuperTabDefaultCompletionType = "<c-p>"
