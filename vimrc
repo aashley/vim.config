@@ -229,7 +229,8 @@ map <F5> :setlocal spell! spelllang=en_au<cr>
 
 " Configure powerline
 let g:Powerline_symbols = 'fancy'
-python from powerline.bindings.vim import source_plugin; source_plugin()
+source $HOME/.vim/bundle/powerline/powerline/bindings/vim/plugin/powerline.vim
+"python from powerline.bindings.vim import source_plugin; source_plugin()
 let g:Powerline_symbols = 'fancy'
 
 
