@@ -148,7 +148,7 @@ filetype indent on
 
 " Restore line number and column if reentering a file after having edited it
 " at least once. For this to work .viminfo in the home dir has to be writable by the user.
-let g:restore_position_ignore = '.git/COMMIT_EDITMSG'
+let g:restore_position_ignore = '.git/COMMIT_EDITMSG\|svn-commit.tmp'
 au BufReadPost * call RestorePosition()
 
 func! RestorePosition()
@@ -230,7 +230,8 @@ map <F5> :setlocal spell! spelllang=en_au<cr>
 
 " Configure powerline
 let g:Powerline_symbols = 'fancy'
-python from powerline.bindings.vim import source_plugin; source_plugin()
+source $HOME/.vim/bundle/powerline/powerline/bindings/vim/plugin/powerline.vim
+"python from powerline.bindings.vim import source_plugin; source_plugin()
 let g:Powerline_symbols = 'fancy'
 
 
@@ -240,10 +241,6 @@ let g:UltiSnipsListSnippets = "<M-Tab>"
 " Set a custom snippets directory
 let g:UltiSnipsSnippetsDir = $HOME . "/.vim/snippets/"
 let g:UltiSnipsSnippetDirectories = ["snippets"]
-
-" Configure PDV
-let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates_snip"
-nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 " Remap leader for easy motion
 let g:EasyMotion_leader_key = '<Leader>'

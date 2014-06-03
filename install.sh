@@ -1,5 +1,7 @@
 #!/bin/bash
 BASEDIR=`dirname $0`
+sudo apt-get install realpath
+BASEDIR=`realpath $BASEDIR`
 
 git clone https://github.com/gmarik/vundle.git bundle/vundle
 sudo apt-get install python-pip
