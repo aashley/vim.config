@@ -44,6 +44,8 @@ Bundle "tobyS/pdv"
 Bundle "tobyS/skeletons.vim"
 " Maintains RST headings
 Bundle "tobyS/rst-headings.vim"
+" WakaTime time tracking
+Bundle "wakatime/vim-wakatime"
 
 " Testing framework for VIM scripts
 Bundle "runVimTests"
@@ -68,8 +70,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'jakobwesthoff/argumentrewrap'
 " Re-indents pasted code
 Bundle 'sickill/vim-pasta'
-" Easy motion using <leader><leader><motion>
-Bundle 'Lokaltog/vim-easymotion'
 " Make ',' an object
 Bundle 'austintaylor/vim-commaobject'
 
@@ -91,6 +91,7 @@ set nocompatible
 set nopaste
 set hidden
 set nowrap
+set cin
 
 " Be case insensitive in searches
 set ignorecase
