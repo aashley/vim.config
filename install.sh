@@ -5,7 +5,7 @@ BASEDIR=`realpath $BASEDIR`
 
 git clone https://github.com/gmarik/vundle.git bundle/vundle
 sudo apt-get install python-pip
-pip install --user git+git://github.com/Lokaltog/powerline
+sudo pip install git+git://github.com/Lokaltog/powerline
 
 if [ ! -h ~/.vimrc ]
 then
@@ -29,7 +29,8 @@ cp $BASEDIR/bundle/powerline/font/10-powerline-symbols.conf ~/.config/fontconfig
 
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git
 pushd $BASEDIR/gnome-terminal-colors-solarized
-./solarize
+./install.sh -s dark -p Solarized
+./set_dark.sh
 popd
 
 mkdir -p $BASEDIR/undodir
