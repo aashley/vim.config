@@ -19,7 +19,7 @@ Bundle 'tobyS/vimtip'
 " Display trailing whitespaces
 Bundle 'jakobwesthoff/whitespacetrail'
 " Fancy snippet machine
-Bundle 'SirVer/ultisnips'
+"Bundle 'SirVer/ultisnips'
 " Nice title bar
 Bundle 'Lokaltog/powerline'
 " Syntaxt checks
@@ -41,7 +41,7 @@ Bundle "tobyS/vmustache"
 " PHP Documentor for VIM
 Bundle "tobyS/pdv"
 " New file skeletons
-Bundle "tobyS/skeletons.vim"
+"Bundle "tobyS/skeletons.vim"
 " Maintains RST headings
 Bundle "tobyS/rst-headings.vim"
 " WakaTime time tracking
