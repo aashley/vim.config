@@ -46,6 +46,7 @@ Bundle "tobyS/pdv"
 Bundle "tobyS/rst-headings.vim"
 " WakaTime time tracking
 Bundle "wakatime/vim-wakatime"
+Bundle "leafgarland/typescript-vim"
 
 " Testing framework for VIM scripts
 Bundle "runVimTests"
@@ -249,3 +250,6 @@ let g:EasyMotion_leader_key = '<Leader>'
 set completeopt=menu,preview
 " Default completion is "normal" (what my old PHP FT plugin did)
 "let g:SuperTabDefaultCompletionType = "<c-p>"
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
